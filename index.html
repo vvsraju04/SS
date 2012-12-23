@@ -104,6 +104,7 @@ function fillBox(x,y)
 			else {
 				box[x][y]=z;
 				document.getElementById("f"+""+x+""+y).value=z;
+				document.getElementById("time").innerHTML=x+" : "+y+"="+z;
 				document.getElementById("msg").innerHTML+=(new Date())+"Setting "+x+" "+y+" to "+z+"<br>";
 			}
 			var var1,var2;
@@ -233,6 +234,7 @@ function fillBox(x,y)
 <a href="#ig" data-role="button" data-icon="home" data-iconpos="notext" data-transition="slide" data-rel="back"></a>
 <input type="button" value="Full It For me" onclick="javascript:init();fillBox(0,0);"></input>
 <br>Puzzle Grid<br>
+<div id="time"></div>
 
 <table cellspacing="0" cellpadding="0" class="t"><tbody><tr>
 <td id="c00" class="g0"><input id="f00"  maxlength="1" pattern="[0-9]*" name="22ayn11" autocomplete="off" size="2" class="d0"></td>
@@ -320,7 +322,7 @@ function fillBox(x,y)
 </div>
 
 
-<div id="time"></div>
+
 <div id="msg"></div>
 </div>
 
